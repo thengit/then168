@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computer Assignment</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" >
+    <script type="text/javascript" src="script-d.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+</head>
+<body>
+
+<!-- form -->
+<div id="id01" class="modal">
+  <span onclick="modal.style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="">
+    <div class="containers">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <br>
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <label for="psw-repeat"><b>Repeat Password</b></label><br>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="search-f">
+	<form name="t-search">
+		<input type="text" name="txtsearch" placeholder="Search">
+	</form>
+</div>
+<div class="sms-f">
+	<a href="" class="sms"><i class="fab fa-facebook-messenger"></i></a>
+</div>
+<!-- end -->
+<div class="container">
+	<!-- header start -->
+
+	<header>
+        <ul>
+            <a href="#" onclick="document.getElementById('id01').style.display='block'"><li><i class="fas fa-sign-in-alt"></i> Sign in</li></a>
+            <li> | </li>
+            <a href="Register.html"><li><i class="fa fa-registered" aria-hidden="true"></i> Register</li></a>
+            <li> | </li>
+            <a href="" onclick="favorite()"><li><i class="fa fa-heart" aria-hidden="true"></i> Favorite</li></a>
+        </ul>
+    </header>
+    
+
+        <div class="main">
+            <img name="slider" width="1200px" height="200px" />
+        </div>
+
+
+   
+	<!-- List buttom -->
+	<!-- <div style="margin: 0 73.5px; margin-top: 5px;"> -->
+	<div>
+		<div id="menu" style="background-color: blue; position: sticky;">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">NEW PRO</a></li>
+				<li><a href="#">DESKTOP <i class="fas fa-chevron-down"></i></a>
+					<ul>
+						<li><a href="#">Brand New</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="PH.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Second Hand</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="HP.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">LAPTOP <i class="fas fa-chevron-down"></i></a>
+					<ul>
+						<li><a href="#">Brand New</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="HP.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Second Hand</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="HP.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="Phone.html" target="_blank">PHONE</a></li>
+				<li><a href="#">PRINTER</a></li>
+				<li><a href="#">ELECTRONIC</a></li>
+				<li><a href="#">ACCESSORY</a></li>
+			</ul>
+		</div>
+	</div>
+		<!-- List Buttom End-->
+
+		<!-- banner logo -->
+
+	<div id="pic">
+		<div>
+			<img src="image/big.png">
+		</div>
+	</div>
+	<!-- The End banner logo-->
+	<!-- text bar-->
+	<div id="textbar"> 
+		<div id="left">PROMOTION</div>
+		<div id="right">
+			<a href="#">View All</a>
+		</div>
+	</div>
+	<!-- The End Text bar-->
+<div id="alltbl">
+	<!-- Table One-->
+	<div class="block4">
+
+		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<img src="image/asus/GL753D.jpg">
+				<p><b>ASUS 15.6" ROG Strix GL553VD</b></p>
+				<h2>$959</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM: 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>1TB (7200 RPM)</span></b><br>
+					- 15.6" FHD (1920 x 1080) IPS, 4K Output<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2: NVIDIA GTX 1050Ti 4GB<br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- <b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.5 Kg<br>
+					-Free : Mouse, Pad<br>
+					&copy; Code: <b style="color: blue;">OTC0001 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+        
+		<!-- Photo2 of block4-->
+
+		<div class="table">
+			<div class="phto">
+				<img src="image/asus/S83.jpg">
+				<p><b>Asus 15.6" VivoBook S510UN </b></p>
+				<h2>$889</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i7-8550U 1.80GHz Max 4.0GHz </b><br>
+					- RAM: 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>120GB (M.2-SSD) + 1TB</span></b><br>
+					- 15.6" LED FHD(1920×1080),Anti-Glare<br>
+					- <b style="color: blue;">VGA 1: Intel UHD Graphics 620<br>
+					- VGA 2: NVIDIA MX150 Upto 4GB<br></b>
+					- Technology: <span style="color: red; font-weight: bold;">Keylight/Fingerprint</span><br>
+					- 42 Whr, 3-Cell Battery<br>
+					-<b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 1.5 Kg | Free :<span style="color: blue; font-weight: bold;">Flash 32GB</span><br>
+					- Free :<b style="color: red;">Asus (Backpack, Mouse) + Pad</b><br>
+					&copy; Code: <b style="color: blue;">OTC0002 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+
+		<div class="table">
+			<div class="phto">
+				<img src="image/Lenovo/12S.jpg">
+				<p><b>Lenovo 14" IdeaPad 720S (8th)</b></p>
+				<h2>$949</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i5-8250U 1.60GHz Max 3.40GHz</b><br>
+					- RAM: 8GB DDR4 = 16GB = $90<br>
+					- HDD : <b><span>256GB SSD</span></b><br>
+					- <span style="color: red; font-weight: bold;"> 14" FHD (1920 x 1080)</span> <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel UHD Graphics 620<br>
+					- VGA 2: NVIDIA MX150 Upto 4GB<br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- <b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 1.4 Kg | Color: <b>Golden</b><br>
+					- Free: <b style="color: red;">Bag+Wireless Mouse+Pad</b><br>
+					&copy; Code: <b style="color: blue;"> OTC0003</b>
+					
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+
+		<!-- Photo4 of block4-->
+
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/an5.jpg">
+				<p><b>Acer Nitro 5| Promotion</b></p>
+				<h2>$1,229</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>Intel i7-7700HQ 2.80GHz Max 3.80GHz </b><br>
+					- RAM: 16GB DDR4 = 32GB = $150<br>
+					- HDD : <b><span>256GB PCle+ 1TB</span></b><br>
+					-  15.6" FHD (1920*1080) IPS, 4K Output<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2:  VGA 2 : NVIDIA GTX 1050Ti 4GB GDDR5<br></b>
+					- Battery: 3220mAh 4-Cell Battery<br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 2.5 Kg | Free : Mouse, Pad<br>
+					&copy; Code: <b style="color: blue;">OTC0004</b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<!-- table two-->
+	<div class="block4">
+
+		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<img src="image/HP/HP015.jpg">
+				<p><b>New HP Pavilion 15, 2018 </b></p>
+				<h2>$869</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i7-7500U 2.7GHz Max 3.5GHz</b><br>
+					- RAM: 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>120GB (M.2-SSD)+ 1TB</span></b><br>
+					- 15.6" FHD (1920 x 1080) IPS, 4K Output<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2: NVIDIA GTX 1050Ti 4GB<br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 2.5 Kg | Free : Mouse, Pad<br>
+					- Free :<b style="color: blue;">Dell Gaming Backpack ($39)</b><br>
+					- Free : <b style="color: red;">Alienware Shirt ($95)</b><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+
+		<!-- Photo2 of block4-->
+		<div class="table">
+			<div class="phto">
+				<img src="image/Dell/A-7460A.jpg">
+				<p><b>Dell Inspiron 7460, 2017</b></p>
+				<h2>$749</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					-  RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>128GB (M.2-SSD) + 0.5TB</span></b><br>
+					- 14" FHD (1920 x 1080) IPS Truelife<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2: NVIDIA 940MX 2GB GDDR5<br></b>
+					- 42 WHr, Prismatic 3-Cell Battery <br>
+					- <b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 1.5 Kg | Free : Mouse, Pad<br>
+					- Color :<b style="color: blue;"> Gold, Gray</b><br>
+					- Free : <b style="color: red;">Flah: 16GB</b><br>
+					- Code: <b style="color: blue;">OTC0006 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$525</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span> 0.5TB = 1TB = $20</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/A-S7.jpg">
+				<p><b>Acer Aspire S7 Touch | Premium </b></p>
+				<h2>$579</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7-4500U 1.80GHz Max 3.0GHz</b><br>
+					- RAM: 8GB DDR3 SDRAM<br>
+					- HDD : <b><span>256GB (SSD)</span></b><br>
+					- 13.3" FHD (1920 x 1080) IPS,<b> Multi-Touch</b> <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 4400<br></b>
+					- 4-cell 6280 mAh(Li-Polymer) Battery<br>
+					- OS : Wins 8.1 / 10 License <br>
+					- Weight : 1.3 Kg | Free : Mouse, Pad<br>
+					- Note :<b style="color: blue;">Used Laptop (98%) | Australia </b><br>
+					- Free : <b style="color: red;">Alienware Shirt ($95)</b><br><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Photo4 of block4-->
+
+<hr>
+	<!-- Table Three-->
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/HP/P71.jpg">
+				<p><b>HP 15.6" Pavilion Power 15</b></p>
+				<h2>$849</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>-  Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM: 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>1TB=1000GB</span></b><br>
+					- 15.6" FHD (1920x1080)<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2: NVIDIA GTX 1050 4GB<br></b>
+					- 4-cell, 70 Wh Li-ion Battery<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.2 Kg <br>
+					- Free : Mouse, Pad<br>
+					- Free: Flash 16GB<br>
+					- Code: <b style="color: blue;">OTC0008 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/HP/PP1.jpg">
+				<p><b>HP Notebook 15 |<span style="color: red;"> Promotion!</span> </b></p>
+				<h2>$429</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel Core i3-7100U 2.4 GHz</b><br>
+					- RAM: 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>1TB (5400 RPM)</span></b><br>
+					- 15.6" WLED-backlit(1366×768)<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2: AMD Radeon R5 M430 2GB<br></b>
+					- 41 Whr, 4-Cell Battery<br>
+					- Audio :DTS Studio Sound, Dual speakers<br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 2.0 Kg | Color: Black<br>
+					- Free :<b style="color: red;"> Bag + Wireless Mouse + Pad </b><br>
+					- Code: <b style="color: blue;">OTC0009 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/HP/HP003.jpg">
+				<p><b>HP Notebook 15 |<span style="color: red;"> Promotion!</span> </b></p>
+				<h2>$425</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel Core i3-7100U 2.4 GHz</b><br>
+					- RAM: 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>1TB (5400 RPM)</span></b><br>
+					- 15.6" WLED-backlit(1366×768)<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2: AMD Radeon R5 M430 2GB<br></b>
+					- 41 Whr, 4-Cell Battery<br>
+					- Audio :DTS Studio Sound, Dual speakers<br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 2.0 Kg | Color: Black<br>
+					- Free :<b style="color: red;"> Bag + Wireless Mouse + Pad </b><br>
+					- Code: <b style="color: blue;">OTC0009 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/HP/NT.jpg">
+				<p><b>HP Pavilion Laptop 14, 2018</b></p>
+				<h2>$695</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz</b><br>
+					- RAM: 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>120GB (M.2-SSD) + 1TB</span></b><br>
+					- 14" FHD IPS (1920 x 1080)<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB <br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- Audio :DTS Studio Sound, Dual speakers<br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 2.5 Kg | Color: Gold<br>
+					- Free :<b style="color: red;">Bag+Wireless Mouse+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0011 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Acer Product-->
+	<div class="brandbar">
+		<img src="image/logo/Acer-Logo_2011.png">
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift 1</b></p>
+				<h2>$409</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>-   Intel N3350 1.1GHz Max 2.4GHz </b><br>
+					- Ram : 4GB (Standard)<br>
+					- HDD : <b><span>128GB (M.2-SSD)</span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 500<br></b>
+					- 3-cell 3770 mAh Li-ion<b style="columns: red;">(Upto 10Hrs)</b> <br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps)<br>
+					- Security : <span>Finger Print</span> <br>
+					- Weight : 1.2 Kg <br>
+					- color: Silver,  Luxury Gold
+					- Free : Mouse, Pad<br>
+					- Free: <b style="color: red;">HP Sleeve, Wireless Mouse, Pad</b><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift SF113-31</b></p>
+				<h2>$419</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Pentium N4200 1.10GHz Max 2.50GHz Quad-Core Processor (4CPUs) </b><br>
+					- Ram : 4GB (Standard) <br>
+					- HDD : <b><span>128GB (M.2-SSD) </span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA : Intel HD Graphics 505 <br></b>
+					- 3-cell 3770 mAh Li-ion <span>Up to 10Hrs</span><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps) <br>
+					- Security : <span>Finger Print</span> <br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 1.2 Kg
+					| color: Silver,  Luxury Gold<br>
+					- Free :<b style="color: red;">HP Sleeve, Wireless Mouse, Pad </b><br>
+					- Code: <b style="color: blue;">OTC0013 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift SF113-31</b></p>
+				<h2>$419</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Pentium N4200 1.10GHz Max 2.50GHz Quad-Core Processor (4CPUs) </b><br>
+					- Ram : 4GB (Standard) <br>
+					- HDD : <b><span>128GB (M.2-SSD) </span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA : Intel HD Graphics 505 <br></b>
+					- 3-cell 3770 mAh Li-ion <span>Up to 10Hrs</span><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps) <br>
+					- Security : <span>Finger Print</span> <br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 1.2 Kg
+					| color: Silver,  Luxury Gold<br>
+					- Free :<b style="color: red;">HP Sleeve, Wireless Mouse, Pad </b><br>
+					- Code: <b style="color: blue;">OTC0014 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift SF113-31</b></p>
+				<h2>$9</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Pentium N4200 1.10GHz Max 2.50GHz Quad-Core Processor (4CPUs) </b><br>
+					- Ram : 4GB (Standard) <br>
+					- HDD : <b><span>250GB (M.2-SSD) </span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA : Intel HD Graphics 505 <br></b>
+					- 3-cell 3770 mAh Li-ion <span>Up to 10Hrs</span><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps) <br>
+					- Security : <span>Finger Print</span> <br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 1.2 Kg
+					| color: Silver,  Luxury Gold<br>
+					- Free :<b style="color: red;">HP Sleeve, Wireless Mouse, Pad </b><br>
+					- Code: <b style="color: blue;">OTC0015 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$649</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 120GB (M.2-SSD) + 0.5TB</span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$659</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 128GB PCIe + 1TB</span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$689</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 250GB (M.2-SSD) + 0.5TB </span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$699</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 256GB PCIe + 1TB </span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$1,079</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 512GB (M.2-SSD)</b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$1,089</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 256GB PCIe</b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$825</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 256GB (M.2-SSD) </b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$865</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 256GB PCIe </b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$525</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span> 0.5TB = 1TB = $20</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$545</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>  1TB (7200 RPM)</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$585</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>  1TB (7200 RPM)</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$615</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span> 128GB PCIe + 1TB</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift 1</b></p>
+				<h2>$409</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>-   Intel N3350 1.1GHz Max 2.4GHz </b><br>
+					- Ram : 4GB (Standard)<br>
+					- HDD : <b><span>128GB (M.2-SSD)</span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 500<br></b>
+					- 3-cell 3770 mAh Li-ion<b style="columns: red;">(Upto 10Hrs)</b> <br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps)<br>
+					- Security : <span>Finger Print</span> <br>
+					- Weight : 1.2 Kg <br>
+					- color: Silver,  Luxury Gold
+					- Free : Mouse, Pad<br>
+					- Free: <b style="color: red;">HP Sleeve, Wireless Mouse, Pad</b><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift SF113-31</b></p>
+				<h2>$419</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Pentium N4200 1.10GHz Max 2.50GHz Quad-Core Processor (4CPUs) </b><br>
+					- Ram : 4GB (Standard) <br>
+					- HDD : <b><span>128GB (M.2-SSD) </span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA : Intel HD Graphics 505 <br></b>
+					- 3-cell 3770 mAh Li-ion <span>Up to 10Hrs</span><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps) <br>
+					- Security : <span>Finger Print</span> <br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 1.2 Kg
+					| color: Silver,  Luxury Gold<br>
+					- Free :<b style="color: red;">HP Sleeve, Wireless Mouse, Pad </b><br>
+					- Code: <b style="color: blue;">OTC0013 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift SF113-31</b></p>
+				<h2>$419</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Pentium N4200 1.10GHz Max 2.50GHz Quad-Core Processor (4CPUs) </b><br>
+					- Ram : 4GB (Standard) <br>
+					- HDD : <b><span>128GB (M.2-SSD) </span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA : Intel HD Graphics 505 <br></b>
+					- 3-cell 3770 mAh Li-ion <span>Up to 10Hrs</span><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps) <br>
+					- Security : <span>Finger Print</span> <br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 1.2 Kg
+					| color: Silver,  Luxury Gold<br>
+					- Free :<b style="color: red;">HP Sleeve, Wireless Mouse, Pad </b><br>
+					- Code: <b style="color: blue;">OTC0014 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F11.jpg">
+				<p><b>Acer 13.3" Swift SF113-31</b></p>
+				<h2>$449</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Pentium N4200 1.10GHz Max 2.50GHz Quad-Core Processor (4CPUs) </b><br>
+					- Ram : 4GB (Standard) <br>
+					- HDD : <b><span>250GB (M.2-SSD) </span></b><br>
+					- 13.3" FHD (1920 x 1080), IPS<br>
+					- Optical Drive: DVD-RW<br>
+					- <b style="color: blue;">VGA : Intel HD Graphics 505 <br></b>
+					- 3-cell 3770 mAh Li-ion <span>Up to 10Hrs</span><br>
+					- USB-C Gen 1 - USB3.1 (up to 5 Gbps) <br>
+					- Security : <span>Finger Print</span> <br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 1.2 Kg
+					| color: Silver,  Luxury Gold<br>
+					- Free :<b style="color: red;">HP Sleeve, Wireless Mouse, Pad </b><br>
+					- Code: <b style="color: blue;">OTC0015 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$649</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 120GB (M.2-SSD) + 0.5TB</span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$659</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 128GB PCIe + 1TB</span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$689</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 250GB (M.2-SSD) + 0.5TB </span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/SF01.jpg">
+				<p><b>Acer 15.6" Swift 3 (Slim)</b></p>
+				<h2>$699</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel Core i3-7100U 2.40GHz</b><br>
+					- Ram : <b style="color: red;">4GB DDR4 = 8GB = $45</b><br>
+					- HDD :<span> 256GB PCIe + 1TB </span><br>
+					- <b style="color: blue;">15.6" FHD (1920 x 1080), IPS</b><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b style="color: blue;"> NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security : Finger Print<br>
+					- Weight: 2.0 Kg | Color : Grey, Blue<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$1,079</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 512GB (M.2-SSD)</b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$1,089</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 256GB PCIe</b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$825</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 256GB (M.2-SSD) </b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/AS21.jpg">
+				<p><b>Acer 14" Swift 3 (Slim)</b></p>
+				<h2>$865</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- Ram : 8GB DDR4 (2133MHz)<br>
+					- HDD : <b> 256GB PCIe </b><br>
+					- <span>14" FHD (1920 x 1080), IPS</span><br>
+					- Optical Drive: NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 : <b>NVIDIA MX150 Upto 4GB</b><br>
+					- Windows 10 Pro Recommendation<br>
+					- Security :<span> KeyLight</span><br>
+					- Weight: 1.5 Kg | Color : White Pearl<br>
+					- Free :<span> Bag + Wireless Mouse + Pad</span><br>
+					- Code: <b>OTC0012 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$525</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span> 0.5TB = 1TB = $20</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<span>Mouse+bag+Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$545</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span>  1TB (7200 RPM)</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$585</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>  1TB (7200 RPM)</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F15-3.jpg">
+				<p><b>Acer Aspire F5 | Promotion !</b></p>
+				<h2>$615</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i5-7200U 2.5GHz Max 3.1GHz </b><br>
+					- RAM : 4GB DDR4 = 8GB = $45<br>
+					- HDD : <b><span> 128GB PCIe + 1TB</span></b><br>
+					- 15.6" HD (1366 x 768), 4K Output <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 620<br>
+					- VGA 2:  NVIDIA 940MX Upto 4GB<br></b>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- <b>Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<b style="color: blue;">Mouse+bag+Pad</b><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F71.jpg">
+				<p><b>Acer 15.6" Aspire F5-573G</b></p>
+				<h2>$665</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7–7500U 2.70GHz Max 3.50GHz</b><br>
+					- RAM : <span>4GB DDR4 = 8GB = $45</span><br>
+					- HDD : 1TB (5400 RPM)<br>
+					- <b>15.6" FHD (1920 x 1080), 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA 940MX Upto 8GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					-<b> Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F71.jpg">
+				<p><b>Acer 15.6" Aspire F5-573G</b></p>
+				<h2>$699</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7–7500U 2.70GHz Max 3.50GHz</b><br>
+					- RAM : <span> 8GB DDR4 = 16GB = $80</span><br>
+					- HDD : 1TB (5400 RPM)<br>
+					- <b>15.6" FHD (1920 x 1080), 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA 940MX Upto 8GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					-<b> Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F71.jpg">
+				<p><b>Acer 15.6" Aspire F5-573G</b></p>
+				<h2>$715</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7–7500U 2.70GHz Max 3.50GHz</b><br>
+					- RAM : <span> 8GB DDR4 = 16GB = $80</span><br>
+					- <b>HDD : 1TB (7200 RPM)</b><br>
+					- <b>15.6" FHD (1920 x 1080), 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA 940MX Upto 8GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					-<b> Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/F71.jpg">
+				<p><b>Acer 15.6" Aspire F5-573G</b></p>
+				<h2>$765</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7–7500U 2.70GHz Max 3.50GHz</b><br>
+					- RAM : <span> 8GB DDR4 = 16GB = $80</span><br>
+					-<b> HDD : 128GB PCIe + 1TB</b><br>
+					- <b>15.6" FHD (1920 x 1080), 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA 940MX Upto 8GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					-<b> Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.1 Kg | Color : Indigo Blue<br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/an5.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$1.029</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM : 8GB DDR4 (2133MHz)<br>
+					- HDD : 1TB = 1,000GB<br>
+					- <span>15.6" FHD (1920×1080) IPS, 4K Output</span><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 630<br>
+					- VGA 2 :<b> NVIDIA GTX 1050Ti 4GB GDDR5</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- <b>Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.5 Kg | Free Flash 16GB<br>
+					-<span> Free : Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/an5.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$1.079</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM :<b>  8GB DDR4 = 16GB = $80</b><br>
+					- HDD : 120GB (M.2-SSD) + 1TB<br>
+					- <span>15.6" FHD (1920×1080) IPS, 4K Output</span><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 630<br>
+					- VGA 2 :<b> NVIDIA GTX 1050Ti 4GB GDDR5</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- <b>Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.5 Kg | Free Flash 16GB<br>
+					-<span> Free : Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/an5.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$1.155</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM : 16GB DDR4 = 32GB = $150<br>
+					- HDD : 120GB (M.2-SSD) + 1TB<br>
+					- <span>15.6" FHD (1920×1080) IPS, 4K Output</span><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 630<br>
+					- VGA 2 :<b> NVIDIA GTX 1050Ti 4GB GDDR5</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- <b>Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.5 Kg | Free Flash 16GB<br>
+					-<span> Free : Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/an5.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$1.229</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM : 16GB DDR4 = 32GB = $150<br>
+					- HDD : 256GB PCIe + 1TB<br>
+					- <span>15.6" FHD (1920×1080) IPS, 4K Output</span><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel HD Graphics 630<br>
+					- VGA 2 :<b> NVIDIA GTX 1050Ti 4GB GDDR5</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- <b>Windows 10 Pro Recommendation</b><br>
+					- Weight : 2.5 Kg | Free Flash 16GB<br>
+					-<span> Free : Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/N81.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$919</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- RAM : <b>8GB DDR4 = 16GB = $80</b><br>
+					- HDD : 1TB (5400 RPM)<br>
+					- <b>15.6" FHD (1920×1080) IPS, 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA MX150 Upto 4GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- Windows 10 Pro Recommendation<br>
+					- Weight : 2.5 Kg |<span> Free KeyProtect</span><br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/N81.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$949</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- RAM : <b>8GB DDR4 = 16GB = $80</b><br>
+					- HDD : 128GB (SSD)<br>
+					- <b>15.6" FHD (1920×1080) IPS, 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA MX150 Upto 4GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- Windows 10 Pro Recommendation<br>
+					- Weight : 2.5 Kg |<span> Free KeyProtect</span><br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/N81.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$989</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- RAM : <b>8GB DDR4 = 16GB = $80</b><br>
+					- HDD : 128GB+1TB (5400 RPM)<br>
+					- <b>15.6" FHD (1920×1080) IPS, 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA MX150 Upto 4GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- Windows 10 Pro Recommendation<br>
+					- Weight : 2.5 Kg |<span> Free KeyProtect</span><br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/N81.jpg">
+				<p><b>Acer Nitro 5 | Promotion !</b></p>
+				<h2>$1,129</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+					<b style="color: black;">- Intel i7-8550U 1.80GHz Max 4.0GHz</b><br>
+					- RAM : <b>16GB DDR4 = 32GB = $160</b><br>
+					- HDD : 1TB (5400 RPM)<br>
+					- <b>15.6" FHD (1920×1080) IPS, 4K Output</b><br>
+					- Optical Drive : NO<br>
+					- VGA 1 : Intel UHD Graphics 620<br>
+					- VGA 2 :<b> NVIDIA MX150 Upto 4GB</b><br>
+					- 4-cell 3220 mAh Li-Polymer<br>
+					- 1x USB 3.1 Gen 1 Type-C<br>
+					- Windows 10 Pro Recommendation<br>
+					- Weight : 2.5 Kg |<span> Free KeyProtect</span><br>
+					- Free :<span> Bag + Mouse + Pad</span><br>
+					- Code: <b style="color: blue;">OTC0007 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+<!-- ................................Apple Computer.............................. -->
+
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-1.jpg">
+				<p><b>MacBook Pro Z0SH-MLH4231-BH </b></p>
+				<h2>$4,399</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b> AMD Radeon Pro 460 4GB GDDR5</b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Note :<span> Coming Soon | Booking Only </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-2.jpg">
+				<p><b>MacBook Pro Z0SH-MLH4231-BH </b></p>
+				<h2>$4,299</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b> AMD Radeon Pro 460 4GB GDDR5</b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Note :<span> Coming Soon | Booking Only </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-1.jpg">
+				<p><b>MacBook Pro Z0SH-MLH4231-BH </b></p>
+				<h2>$4,199</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b> AMD Radeon Pro 460 4GB GDDR5</b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Note :<span> Coming Soon | Booking Only </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-2.jpg">
+				<p><b>MacBook Pro Z0SH-MLH4231-BH </b></p>
+				<h2>$4,099</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b> AMD Radeon Pro 460 4GB GDDR5</b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Note :<span> Coming Soon | Booking Only </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-1.jpg">
+				<p><b>New Apple MacBook Pro, 2017  </b></p>
+				<h2>$2,719</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b>  Radeon Pro 560 4GB GDDR5 </b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Color : MPTT2 (Gray)  </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-2.jpg">
+				<p><b>New Apple MacBook Pro, 2017 </b></p>
+				<h2>$2,719</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b>  Radeon Pro 560 4GB GDDR5 </b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Color : MPTV2 (Silver)  </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-1.jpg">
+				<p><b>New Apple MacBook Pro, 2017 </b></p>
+				<h2>$2,329</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b>  Radeon Pro 560 4GB GDDR5 </b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Color : MPTT2 (Gray)  </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-2.jpg">
+				<p><b>New Apple MacBook Pro, 2017 </b></p>
+				<h2>$2,329</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9 GHz Intel Core i7 Quad-Core</b><br>
+					- RAM : <span>16GB of 2133 MHz</span><br>
+					- HDD : <b>2TB PCIe SSD</b><br>
+					- 15.4" 2880 x 1800 Retina Display<br>
+					- VGA :<b>  Radeon Pro 560 4GB GDDR5 </b><br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.81 Kg |<b> OS: macOS Sierra</b><br>
+					- Color : MPTV2 (Silver)  </span><br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+	</div>
+<hr>
+	<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-1.jpg">
+				<p><b>New Apple MacBook Pro, 2017  </b></p>
+				<h2>$2,719</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 3.1GHz Intel Core i5 7th Gen</b><br>
+					- RAM : 8GB LPDDR3<br>
+					- HDD :<b> 512GB PCIe SSD</b><br>
+					- 13.3" 2560 x 1600 Retina Display<br>
+					- VGA : Intel Iris Plus Graphics 650<br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.36 Kg<br>
+					- Model: MPXW2 (Gray), MPXY2 (Silver)<br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-2.jpg">
+				<p><b>New Apple MacBook Pro, 2017 </b></p>
+				<h2>$2,719</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 2.9GHz Intel Core i5 7th Gen</b><br>
+					- RAM : 8GB LPDDR3<br>
+					- <b>HDD : 512GB PCIe SSD</b><br>
+					- 13.3" 2560 x 1600 Retina Display<br>
+					- VGA : Intel Iris Plus Graphics 650<br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.36 Kg | OS: macOS Sierra<br>
+					- Color : MNQG2 (Silver)<br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-1.jpg">
+				<p><b>New Apple MacBook Pro, 2017 </b></p>
+				<h2>$2,329</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 3.1GHz Intel Core i5 7th Gen</b><br>
+					- RAM : 8GB LPDDR3<br>
+					- <b>HDD : 256GB PCIe SSD</b><br>
+					- 13.3" 2560 x 1600 Retina Display<br>
+					- VGA : Intel Iris Plus Graphics 650<br>
+					- Touch Bar | Touch ID Sensor<br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.36 Kg | OS: macOS Sierra<br>
+					- Color : MPXV2 (Gray) <br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/17-2.jpg">
+				<p><b>New Apple MacBook Pro, 2017 </b></p>
+				<h2>$2,329</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;">
+				<b> - 3.1GHz Intel Core i5 7th Gen</b><br>
+					- RAM : 8GB LPDDR3<br>
+					- <b>HDD : 256GB PCIe SSD</b><br>
+					- 13.3" 2560 x 1600 Retina Display<br>
+					- VGA : Intel Iris Plus Graphics 650<br>
+					- <b>Touch Bar | Touch ID Sensor</b><br>
+					- 4 x Thunderbolt 3 (USB Type-C) Ports<br>
+					- Weight : 1.36 Kg | OS: macOS Sierra<br>
+					- Color : MPXX2 (Silver) <br>
+					- Code: <b style="color: blue;">OTC0005 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="description.html">Order Now</a>
+			</div>
+		</div>
+<hr>
+		<div class="block4">
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/AP.jpg">
+				<p><b>iPad Pro (12.9-Inch) | Wi-Fi Celllar</b><br><span>512GB (Space Gray)</span> </p>
+				<h2><s>$1,299</s> $ 1,199</h2>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/AP.jpg">
+				<p><b>iPad Pro (12.9-Inch) | Wi-Fi Celllar</b><br><span>512GB (Space Gray)</span> </p>
+				<h2><s>$1,299</s> $ 1,199</h2>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/AP1.jpg">
+				<p><b>iPad Pro (12.9-Inch) | Wi-Fi Celllar</b><br><span>512GB (Space Gray)</span> </p>
+				<h2><s>$1,299</s> $ 1,199</h2>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<img src="image/Apple/AP1.jpg">
+				<p><b>iPad Pro (12.9-Inch) | Wi-Fi Celllar</b><br><span>512GB (Space Gray)</span> </p>
+				<h2><s>$1,299</s> $ 1,199</h2>
+			</div>
+		</div>
+	</div>
+<hr>
+	<!-- .............Dell Product..........-->
+
+	<div class="lapbanner">
+		<img src="image/dell.gif">
+	</div>
+	<div class="block4">
+<hr>
+		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo2 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+	</div>
+	<div class="lapbanner">
+		<img src="image/toshiba.gif">
+	</div>
+	<div class="block4">
+<hr>
+		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo2 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+	</div>
+	<div class="lapbanner">
+		<img src="image/predator.gif">
+	</div>
+	<div class="block4">
+
+<hr>		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo2 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+	</div>
+	<div class="lapbanner">
+		<img src="image/dell.gif">
+	</div>
+	<div class="block4">
+<hr>
+		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo2 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+		<div class="table">
+			<div class="phto">
+				<p>No Product</p>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<!-- The end-->
+<!-- start-->
+<div id="footer">
+	<div class="foot1">
+		<img src="image/Logo_school_NIB.png">
+		<p>វិទ្យាស្ថានជាតិពាណិជ្ជសាស្ត្រ<br>
+	National Intistute Of Business</p>
+	</div>
+	<div class="foot2">
+		<p>ទំនាក់ទំនងលេខទូរស័ព្វ: 069 690 428 | 097 35 97 350<br>
+			E-mail: ongthen68@gmail.com<br>
+			រៀបចំដោយនិស្សិតពត៌មានវិទ្យា
+		</p>
+	</div>
+	<!--<div class="foot3">
+		<form style="border-radius: 8px;">
+			<input type="text" name="Search" placeholder="Search">
+			<input type="submit" name="submit" value="Search">
+		</form>
+	</div>-->
+</div>
+</div>
+<!-- The end -->
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('.more').on('click',function(){
+		        $(".more").css({"background-color":"pink"});
+		        alert("Are you sure");
+	    });
+	    $('#footer').on('mouseover',function(){
+	    	$('#footer').css({"background-color":"red"})
+	    });
+	})
+
+	var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

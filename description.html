@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computer Assignment</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" >
+    <script type="text/javascript" src="script-d.js"></script>
+<style>
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.containers {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;  /*Full height */
+    /*overflow: auto; */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+/*.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+*/
+/* Change styles for span and cancel button on extra small screens */
+/*@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}*/
+</style>
+</head>
+<body>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="image/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="containers">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+<!-- 
+    <div class="containers" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div> -->
+  </form>
+</div>
+
+<div class="container">
+	<!-- header start -->
+
+	<header>
+        <ul>
+        	<a href="index.html"><li><b>D<span>y</span>nam<span>i</span>c</b></li></a>
+        	<li> | </li>
+            <a href="#" onclick="modal.style.display='block'"><li><i class="fas fa-sign-in-alt"></i> Sign in</li></a>
+            <li> | </li>
+            <a href="Register.html"><li><i class="fa fa-registered" aria-hidden="true"></i> Register</li></a>
+            <li> | </li>
+            <a href="#" onclick="favorite()"><li><i class="fa fa-heart" aria-hidden="true"></i> Favorite</li></a>
+        </ul>
+    </header>
+    
+
+        <div class="main">
+            <img name="slider" width="1200px" height="200px" />
+        </div>
+
+
+   
+	<!-- List buttom -->
+	<!-- <div style="margin: 0 73.5px; margin-top: 5px;"> -->
+	<div>
+		<div id="menu" style="background-color: blue; position: sticky;">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">NEW PRO</a></li>
+				<li><a href="#">DESKTOP <i class="fas fa-chevron-down"></i></a>
+					<ul>
+						<li><a href="#">Brand New</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="PH.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Second Hand</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="HP.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">LAPTOP <i class="fas fa-chevron-down"></i></a>
+					<ul>
+						<li><a href="#">Brand New</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="HP.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Second Hand</a>
+							<ul>
+								<li><a href="Apple.html" target="_blank">Apple</a></li>
+								<li><a href="Acer.html" target="_blank">Acer</a></li>
+								<li><a href="Asus.html" target="_blank">Asus</a></li>
+								<li><a href="Dell.html" target="_blank">Dell</a></li>
+								<li><a href="IBM.html" target="_blank">IBM</a></li>
+								<li><a href="MSI.html" target="_blank">MSI</a></li>
+								<li><a href="HP.html" target="_blank">HP</a></li>
+								<li><a href="Lenovo.html" target="_blank">Lenovo</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="Phone.html" target="_blank">PHONE</a></li>
+				<li><a href="#">PRINTER</a></li>
+				<li><a href="#">ELECTRONIC</a></li>
+				<li><a href="#">ACCESSORY</a></li>
+			</ul>
+		</div>
+	</div>
+		<!-- List Buttom End-->
+
+	<div class="des">
+		<div class="tbl-image">
+			<img src="image/asus/GL753D.jpg">
+		</div>
+		<div class="tbl-desc">
+			<p><b class="name-pro">ASUS 15.6" ROG Strix GL553VD</b></p>
+				<h2>$959</h2><br>
+				<p><b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM: 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>1TB (7200 RPM)</span></b><br>
+					- 15.6" FHD (1920 x 1080) IPS, 4K Output<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2: NVIDIA GTX 1050Ti 4GB<br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- <b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.5 Kg<br>
+					-Free : Mouse, Pad<br>
+			</p>
+			<div class="btn-click">
+				<form name="myForm">
+					<input class="btn-click" type="submit" name="cart" value="Add To Cart" onclick="validateForm()">
+				</form>
+			</div>
+			<div class="icon-bar">
+				<a href="#" class="facebook" onclick="facebook()"><i class="fab fa-facebook"></i></a>
+				<a href="#" class="youtube" onclick="youtube()"><i class="fab fa-youtube"></i></a>
+				<a href="#" class="telegram" onclick="telegram()"><i class="fab fa-telegram"></i></i></a>
+				<a href="#" class="instagram" onclick="instagram()"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="tbl-link">
+			<ul>
+				<li><a href="Apple.html" class="link" target="_blank">Apple</a></li>
+				<li><a href="Acer.html" class="link" target="_blank">Acer</a></li>
+				<li><a href="Asus.html" class="link" target="_blank">Asus</a></li>
+				<li><a href="Dell.html" class="link" target="_blank">Dell</a></li>
+				<li><a href="IBM.html" class="link" target="_blank">IBM</a></li>
+				<li><a href="MSI.html" class="link" target="_blank">MSI</a></li>
+				<li><a href="HP.html" class="link" target="_blank">HP</a></li>
+				<li><a href="Lenovo.html" class="link" target="_blank">Lenovo</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="more">
+		<a class="all-pro" href="index.html">All Products</a>
+	</div>
+
+<div id="alltbl">
+	<!-- Table One-->
+	<div class="block4" style="border-top: 1px solid red;">
+
+		<!-- Photo1 of block4-->
+		<div class="table">
+			<div class="phto">
+				<img src="image/asus/GL753D.jpg">
+				<p><b>ASUS 15.6" ROG Strix GL553VD</b></p>
+				<h2>$959</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i7-7700HQ 2.80GHz Max 3.80GHz</b><br>
+					- RAM: 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>1TB (7200 RPM)</span></b><br>
+					- 15.6" FHD (1920 x 1080) IPS, 4K Output<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2: NVIDIA GTX 1050Ti 4GB<br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- <b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 2.5 Kg<br>
+					-Free : Mouse, Pad<br>
+					&copy; Code: <b style="color: blue;">OTC0001 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="">Order Now</a>
+			</div>
+		</div>
+        
+		<!-- Photo2 of block4-->
+
+		<div class="table">
+			<div class="phto">
+				<img src="image/asus/S83.jpg">
+				<p><b>Asus 15.6" VivoBook S510UN </b></p>
+				<h2>$889</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i7-8550U 1.80GHz Max 4.0GHz </b><br>
+					- RAM: 8GB DDR4 = 16GB = $80<br>
+					- HDD : <b><span>120GB (M.2-SSD) + 1TB</span></b><br>
+					- 15.6" LED FHD(1920×1080),Anti-Glare<br>
+					- <b style="color: blue;">VGA 1: Intel UHD Graphics 620<br>
+					- VGA 2: NVIDIA MX150 Upto 4GB<br></b>
+					- Technology: <span style="color: red; font-weight: bold;">Keylight/Fingerprint</span><br>
+					- 42 Whr, 3-Cell Battery<br>
+					-<b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 1.5 Kg | Free :<span style="color: blue; font-weight: bold;">Flash 32GB</span><br>
+					- Free :<b style="color: red;">Asus (Backpack, Mouse) + Pad</b><br>
+					&copy; Code: <b style="color: blue;">OTC0002 </b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="">Order Now</a>
+			</div>
+		</div>
+
+		<!-- Photo3 of block4-->
+
+		<div class="table">
+			<div class="phto">
+				<img src="image/Lenovo/12S.jpg">
+				<p><b>Lenovo 14" IdeaPad 720S (8th)</b></p>
+				<h2>$949</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>- Intel i5-8250U 1.60GHz Max 3.40GHz</b><br>
+					- RAM: 8GB DDR4 = 16GB = $90<br>
+					- HDD : <b><span>256GB SSD</span></b><br>
+					- <span style="color: red; font-weight: bold;"> 14" FHD (1920 x 1080)</span> <br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel UHD Graphics 620<br>
+					- VGA 2: NVIDIA MX150 Upto 4GB<br></b>
+					- 56 Whr, 4-Cell Battery<br>
+					- <b style="color: red;"> Windows 10 Pro Recommedation</b><br>
+					- Weight : 1.4 Kg | Color: <b>Golden</b><br>
+					- Free: <b style="color: red;">Bag+Wireless Mouse+Pad</b><br>
+					&copy; Code: <b style="color: blue;"> OTC0003</b>
+					
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="">Order Now</a>
+			</div>
+		</div>
+
+		<!-- Photo4 of block4-->
+
+		<div class="table">
+			<div class="phto">
+				<img src="image/Acer/an5.jpg">
+				<p><b>Acer Nitro 5| Promotion</b></p>
+				<h2>$1,229</h2><br>
+				<p style="font-size: 10pt; text-align: left; color: black; padding-left: 5px;"><b>Intel i7-7700HQ 2.80GHz Max 3.80GHz </b><br>
+					- RAM: 16GB DDR4 = 32GB = $150<br>
+					- HDD : <b><span>256GB PCle+ 1TB</span></b><br>
+					-  15.6" FHD (1920*1080) IPS, 4K Output<br>
+					- Optical Drive: NO<br>
+					- <b style="color: blue;">VGA 1: Intel HD Graphics 630<br>
+					- VGA 2:  VGA 2 : NVIDIA GTX 1050Ti 4GB GDDR5<br></b>
+					- Battery: 3220mAh 4-Cell Battery<br>
+					- Windows 10 Pro Recommedation<br>
+					- Weight : 2.5 Kg | Free : Mouse, Pad<br>
+					&copy; Code: <b style="color: blue;">OTC0004</b>
+				</p>
+			</div>
+			<div class="cmd-order">
+				<a href="">Order Now</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- start-->
+	<div id="footer">
+		<div class="foot1">
+			<img src="image/Logo_school_NIB.png">
+			<p>វិទ្យាស្ថានជាតិពាណិជ្ជសាស្ត្រ<br>
+		National Intistute Of Business</p>
+		</div>
+		<div class="foot2">
+			<p>ទំនាក់ទំនងលេខទូរស័ព្វ: 069 690 428 | 097 35 97 350<br>
+				E-mail: ongthen68@gmail.com<br>
+				រៀបចំដោយនិស្សិតពត៌មានវិទ្យា
+			</p>
+		</div>
+		<!-- <div class="foot3">
+			<form name="searchform" style="border-radius: 8px;">
+				<input type="text" name="search" placeholder="Search">
+				<input type="submit" name="" value="Search">
+			</form>
+		</div> -->
+	</div>
+</div>
+<div class="icon-bar-f">
+	<ul>
+		<li><a href="#" class="facebook-f" onclick="facebook()"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="#" class="youtube-f" onclick="youtube()"><i class="fab fa-youtube"></i></a></li>
+		<li><a href="#" class="telegram-f" onclick="telegram()"><i class="fab fa-telegram"></i></i></a></li>
+		<li><a href="#" class="instagram-f" onclick="instagram()"><i class="fab fa-instagram"></i></a></li>
+	</ul>
+</div>
+<div class="search-f">
+	<form name="t-search">
+		<input type="text" name="txtsearch" placeholder="Search">
+	</form>
+</div>
+<div class="sms-f">
+	<a href="" class="sms"><i class="fab fa-facebook-messenger"></i></a>
+</div>
+
+<div id="id01" class="modal">
+  <span onclick="modal.style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="">
+    <div class="containers">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <br>
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <label for="psw-repeat"><b>Repeat Password</b></label><br>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+    <script type="text/javascript" src="script-d.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('.more').on('click',function(){
+		        $(".more").css({"background-color":"pink"});
+		        alert("Are you sure");
+	    });
+	    $('#footer').on('mouseover',function(){
+	    	$('#footer').css({"background-color":"red"})
+	    })
+	})
+
+	var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
